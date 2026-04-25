@@ -1,0 +1,45 @@
+{
+  "name": "ongole-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test:backend": "tsx scripts/test-backend.ts",
+    "ingest:sample": "tsx scripts/ingest-sample-news.ts",
+    "scraper:run": "tsx scripts/run-scraper.ts",
+    "scraper:local": "tsx scripts/run-scraper.ts local",
+    "scraper:state": "tsx scripts/run-scraper.ts state",
+    "scraper:telugu": "tsx scripts/run-scraper.ts telugu",
+    "scraper:clear": "tsx scripts/clear-test-posts.ts"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "@supabase/supabase-js": "^2.104.1",
+    "axios": "^1.15.2",
+    "cheerio": "^1.2.0",
+    "cloudinary": "^2.9.0",
+    "dotenv": "^17.4.2",
+    "framer-motion": "^12.38.0",
+    "gsap": "^3.15.0",
+    "lucide-react": "^1.11.0",
+    "next": "14.2.35",
+    "node-cron": "^4.2.1",
+    "react": "^18",
+    "react-dom": "^18",
+    "rss-parser": "^3.13.0",
+    "tsx": "^4.21.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.35",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  }
+}
