@@ -37,20 +37,20 @@ Click "Environment Variables" and add ALL of these:
 
 ```env
 # Supabase (REQUIRED)
-SUPABASE_URL=https://euypkjegbawiiskufdow.supabase.co
-SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImV1eXBramVnYmF3aWlza3VmZG93Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzY5OTU3MDAsImV4cCI6MjA5MjU3MTcwMH0.mE4nugj87sxJa7aW-wwfbDi4JZyw18P1UQkAyLEn19M
-SUPABASE_SERVICE_ROLE_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImV1eXBramVnYmF3aWlza3VmZG93Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3Njk5NTcwMCwiZXhwIjoyMDkyNTcxNzAwfQ.vAajHAJ5S5ZXnJUJdKSSyr4Zukm5jw_C-8RaP3O65Ms
+SUPABASE_URL=your_supabase_project_url
+SUPABASE_ANON_KEY=your_supabase_anon_key
+SUPABASE_SERVICE_ROLE_KEY=your_supabase_service_role_key
 
 # AI (REQUIRED)
-GEMINI_API_KEY=AIzaSyBIf7btoowvTbczndtaY11nI1croUBCNMs
+GEMINI_API_KEY=your_gemini_api_key
 
 # Cloudinary (REQUIRED)
-CLOUDINARY_CLOUD_NAME=dckr64n9u
-CLOUDINARY_API_KEY=753139177247747
-CLOUDINARY_API_SECRET=eqRIkurspXxRGrwT_LjvaY4qy0s
+CLOUDINARY_CLOUD_NAME=your_cloudinary_cloud_name
+CLOUDINARY_API_KEY=your_cloudinary_api_key
+CLOUDINARY_API_SECRET=your_cloudinary_api_secret
 
 # Cron Security (REQUIRED)
-CRON_SECRET=ongole-news-2026-secure-cron-key
+CRON_SECRET=your_random_secure_string
 
 # App Config (REQUIRED)
 NODE_ENV=production
@@ -63,6 +63,8 @@ INSTAGRAM_BUSINESS_ID=
 # News API (OPTIONAL)
 NEWS_API_KEY=
 ```
+
+**⚠️ SECURITY NOTE**: Copy your actual values from your local `.env.local` file. Never commit real credentials to GitHub!
 
 **IMPORTANT**: 
 - Make sure to add ALL environment variables

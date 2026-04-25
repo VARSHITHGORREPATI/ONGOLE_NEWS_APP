@@ -11,21 +11,26 @@
 3. Click "Import"
 
 ### Step 3: Add Environment Variables
-Copy and paste these into Vercel's Environment Variables section:
+⚠️ **Copy your actual credentials from your local `.env.local` file**
+
+Add these variables in Vercel (one by one):
 
 ```env
-SUPABASE_URL=https://euypkjegbawiiskufdow.supabase.co
-SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImV1eXBramVnYmF3aWlza3VmZG93Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzY5OTU3MDAsImV4cCI6MjA5MjU3MTcwMH0.mE4nugj87sxJa7aW-wwfbDi4JZyw18P1UQkAyLEn19M
-SUPABASE_SERVICE_ROLE_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImV1eXBramVnYmF3aWlza3VmZG93Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3Njk5NTcwMCwiZXhwIjoyMDkyNTcxNzAwfQ.vAajHAJ5S5ZXnJUJdKSSyr4Zukm5jw_C-8RaP3O65Ms
-GEMINI_API_KEY=AIzaSyBIf7btoowvTbczndtaY11nI1croUBCNMs
-CLOUDINARY_CLOUD_NAME=dckr64n9u
-CLOUDINARY_API_KEY=753139177247747
-CLOUDINARY_API_SECRET=eqRIkurspXxRGrwT_LjvaY4qy0s
-CRON_SECRET=ongole-news-2026-secure-cron-key
+SUPABASE_URL=<from your .env.local>
+SUPABASE_ANON_KEY=<from your .env.local>
+SUPABASE_SERVICE_ROLE_KEY=<from your .env.local>
+GEMINI_API_KEY=<from your .env.local>
+CLOUDINARY_CLOUD_NAME=<from your .env.local>
+CLOUDINARY_API_KEY=<from your .env.local>
+CLOUDINARY_API_SECRET=<from your .env.local>
+CRON_SECRET=<create a random secure string>
 NODE_ENV=production
 ```
 
-**IMPORTANT**: Set these for **Production**, **Preview**, AND **Development** environments!
+**IMPORTANT**: 
+- Use YOUR actual values from `.env.local` (don't use placeholders)
+- Set for **Production**, **Preview**, AND **Development** environments
+- Never commit real credentials to GitHub!
 
 ### Step 4: Deploy
 Click **"Deploy"** and wait 2-3 minutes ⏱️
